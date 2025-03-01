@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: simple-run
+spec:
+  pipelineSpec:
+    tasks:
+      - name: print-task
+        taskSpec:
+          steps:
+            - name: print
+              image: alpine
+              script: |
+                #!/bin/sh
+                echo "Hey, how are you?"
