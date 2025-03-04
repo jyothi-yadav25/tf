@@ -14,8 +14,8 @@ provider "ibm" {
 
 variable "ibmcloud_api_key" {}
 
-resource "ibm_cloudant" "my_cloudant" {
-  name     = "my-cloudant-instance"
+resource "ibm_cloudant" "my_cloudant2" {
+  name     = "my-cloudant2-instance"
   plan     = "lite"
   location = "us-south"
 }
